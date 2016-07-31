@@ -1,0 +1,20 @@
+<div class="newcomer">
+    ​<div class="panel-container">
+        <div class="panel-table view-batches">
+            <div class="panel-table-row" ng-repeat="matches in $ctrl.matches" ng-class="{active : lead.selected}">
+
+                <div class="panel-table-row-item smallitem">
+                    <div>{{matches.newcomer.fullName}}</div>
+                </div>
+                <div class="panel-table-row-item">
+                    <div><b>Match on: </b><span>{{matches.interest.name}}</span></div>
+                </div>
+                <div class="panel-table-row-item smallitem">
+                    <div><input type="button" value="Send a message"/></div></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

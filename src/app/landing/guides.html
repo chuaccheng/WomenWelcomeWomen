@@ -1,0 +1,97 @@
+<div class="techs-container">
+  <h2 class="techs-h2">
+    Create Guide
+  </h2>
+  <div class="techs">
+      <form class="guide-details-form"
+            name="guideDetailsForm"
+            ng-submit="$ctrl.submitForm()">
+          <!--<div>
+              <h2>Personal Details</h2>
+              <div>
+                <div>
+                    <label for="name" id="nameLabel">Full name</label>
+                </div>
+
+                  <div>
+                    <input id="name"
+                           name="name"
+                           ng-model="$ctrl.name"
+                           ng-model-options="{ updateOn: 'default blur' }"
+                           value="all"
+                           type="text"
+                           >
+                  </div>
+              </div>
+
+              <div>
+                  <div>
+                      <label for="suburb" id="suburbLabel">Suburb</label>
+                  </div>
+
+                  <div>
+                      <input id="suburb"
+                             name="suburb"
+                             ng-model="$ctrl.suburb"
+                             ng-model-options="{ updateOn: 'default blur' }"
+                             value="all"
+                             type="text"
+                              >
+                  </div>
+              </div>
+              <div>
+                  <div>
+                      <label for="birthCountry" id="birthCountryLabel">Birth Country</label>
+                  </div>
+
+                  <div>
+                      <input id="birthCountry"
+                             name="birthCountry"
+                             ng-model="$ctrl.birthCountry"
+                             ng-model-options="{ updateOn: 'default blur' }"
+                             value="all"
+                             type="text"
+                              >
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div>
+                  <h2>What I need</h2>
+                  <div class="needsDiv">
+                      <label ng-repeat="needs in $ctrl.needs">
+                          <input  class="needs"
+                                  type="checkbox"
+                                  name="selectedFNeeds[]"
+                                  value="{{needs.name}}"
+                                  ng-checked="selection.indexOf(needs) > -1"
+                                  ng-click="toggleSelection(needs.name)"
+                                  > {{needs.name}}
+                      </label>
+                  </div>
+              </div>
+          </div>
+
+          <div>
+              <div>
+                  <h2>Describe Who You Are</h2>
+                  <div class="shortDesc">
+                      <textarea
+                              ng-model="$ctrl.shortDesc"
+                              name="shortDesc">
+                      </textarea>
+                  </div>
+              </div>
+          </div>
+
+          <div class="submit-button-group">
+              <button type="submit"
+                      ng-class="['primary-button', {'busy-please-wait': movingDetails.loadingAddressDetails}]">
+                  Continue
+              </button>
+          </div>-->
+          <guide needs="$ctrl.needs" ctrl="$ctrl" profile="offer"></guide>
+      </form>
+
+  </div>
+</div>

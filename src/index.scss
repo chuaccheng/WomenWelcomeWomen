@@ -1,0 +1,475 @@
+$text-bold-colour: #2d3238;
+$panel-border-colour: #e2e6e7;
+$action-bold-colour :#382f2d;
+$button-background-colour: #f3f1ee;
+$button-border-colour: #e2dfda;
+$bottom-header-colour: #807370;
+
+$row-colour: rgba(238, 244, 251, 0.5);
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+.header-title {
+  flex: 1;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.header-date {
+  flex: 1;
+  text-align: right;
+  margin: 1rem;
+  white: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #cf4646;
+  color: white;
+}
+.title-h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 1rem;
+}
+.title-logo {
+  height: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.title-h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+.footer {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+}
+
+.techs-container {
+  margin: 1rem;
+}
+.techs-h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tech {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.tech-logo {
+  width: 5rem;
+  height: 5rem;
+  float: right;
+  margin: 0 0 .5rem .5rem;
+}
+.tech-h3 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+.needsDiv {
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.needs {
+  order: 1;
+}
+
+.shortDesc {
+  textarea {
+    width: 450px;
+    height: 100px;
+  }
+}
+
+.formText {
+  width: 300px;
+}
+
+.formField {
+  padding: 5px 0 5px 0;
+}
+
+.maintext {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10%;
+  text-align: center;
+}
+
+
+.mainLanding {
+  font-family: "Raleway", "Muli", Arial, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  //background-image: url("landingpagepurple.png");
+  display: block;
+}
+
+
+.register {
+  background-color: transparent;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;*/
+}
+.registertext {
+  font-family: Dosis;
+  font-size: 30px;
+}
+#grad1 {
+  height: 200px;
+  background: #9B00FF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#9B00FF, #CB05E0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#9B00FF, #CB05E0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#9B00FF, #CB05E0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#9B00FF, #CB05E0); /* Standard syntax (must be last) */
+}
+
+.icon {
+  float: left;
+}
+
+.title {
+  background-color: #FFFFFF;
+  font-family: "Raleway", "Muli", Arial, sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.form {
+  //width: 80%;
+  background-color: #FFFFFF;
+  color: #777777;
+  border: 1px solid #F4F4F4;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+.formhead {
+  background-color: #FFE6EC;
+  color: #777777;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+.icon {
+  float: left;
+}
+.formbody {
+  font-color: #222222;
+  padding-left: 20px;
+}
+.footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  //padding-top: 25px;
+  //padding-bottom: 100px;
+  //padding-left: 20px;
+  text-align: center;
+  //border-top: 10px solid #595959;
+  margin: 0 auto;
+  background: #9B00FF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#9B00FF, #CB05E0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#9B00FF, #CB05E0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#9B00FF, #CB05E0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#9B00FF, #CB05E0); /* Standard syntax (must be last) */
+}
+
+.header-div {
+  background-color: #444344;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.button-header {
+  display: inline;
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  color: #222222;
+  padding: 3px 3px 3px 3px;
+/*  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;*/
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+  float: right;
+}
+
+$row-colour: rgba(238, 244, 251, 0.5);
+
+.coan-header {
+  .header-row {
+    clear: both;
+  }
+}
+
+.techs-container {
+  #match-container {
+    width: 100%;
+  }
+
+  .newcomer {
+    min-height: 760px;
+    width: 100%;
+
+    .panel-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 25px;
+
+      .ng-hide.ng-hide-animate{
+        display: none !important;
+      }
+    }
+
+    .submit-button-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      > a {
+        font-size: 15px;
+        color: $action-bold-colour;
+      }
+    }
+
+    .panel-table {
+      display: flex;
+      flex-flow: column nowrap;
+      flex-grow: 1;
+
+      &-header {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 20px 30px;
+        background: white;
+        border: 1px solid $panel-border-colour;
+      }
+
+      .bottom {
+        .panel-table-row-item {
+          color: $bottom-header-colour;
+          font-size: 15px;
+        }
+      }
+
+      .top {
+        height: 100px;
+        padding-top: 35px;
+        .panel-table-row-item, .link {
+          > div > a {
+            color: $action-bold-colour;
+            font-size: 15px;
+          }
+          .select-all {
+            float: left;
+            position: relative;
+            width: 200px;
+            left: 47px;
+            bottom: 18px;
+          }
+          > span > label {
+            color: $action-bold-colour;
+            font-size: 15px;
+          }
+        }
+      }
+
+
+      &-row {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+        background: white;
+        border: 1px solid $panel-border-colour;
+        padding: 30px 30px;
+        &-item {
+          flex-flow: column nowrap;
+          flex-grow: 1;
+          flex-basis: 0;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          > div {
+            text-align: left;
+            font-size: 13px;
+            color: $text-bold-colour;
+            padding-right: 5px;
+            word-break: keep-all;
+            line-height: 1.4;
+          }
+          > input[type=checkbox] {
+            position: relative;
+            vertical-align: middle;
+            bottom: 8px;
+          }
+        }
+      }
+    }
+
+    .panel-table.view-batches {
+      font-family: Arial, sans-serif;
+    }
+
+    .active {
+      background: $row-colour;
+    }
+
+    .bigitem {
+      flex: 1.25;
+    }
+
+    .item-heading {
+      flex: 1.25;
+      padding-top: 8px;
+    }
+
+    .item-heading-small {
+      flex: 10;
+    }
+
+    .smallitem {
+      flex: 0.30;
+    }
+
+    .link {
+      text-align: right;
+      padding-right: 25px;
+      padding-top: 8px;
+      .batch-Actions.thirdColumnLink.button {
+        position: relative;
+        bottom: 10px;
+      }
+    }
+
+    .panel-data {
+      margin: 25px 0px;
+
+      &-main {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 18px;
+        color: $text-bold-colour;
+      }
+      &-sub {
+        margin-bottom: 40px;
+      }
+      &-big {
+        padding-top: 10px;
+        font-size: 15px;
+      }
+    }
+
+    .panel-group {
+      display: flex;
+      flex-flow: row nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
+      word-wrap: break-word;
+      flex-direction: column;
+    }
+
+    .download-batch-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 1px solid $panel-border-colour;
+      height: 584px;
+      font-size: 18px;
+      color: $text-bold-colour;
+    }
+
+    .approve-requests-panel {
+      background: white;
+      border: 1px solid $panel-border-colour;
+      height: 165px;
+    }
+
+  }
+}

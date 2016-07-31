@@ -1,0 +1,104 @@
+<div class="form">
+    <div class="newcomer">
+        ​
+        <div>
+            <div class="formhead">Enter Personal Details</div><br>
+            <div class="formbody">
+                <div class="formField">
+                    <div>
+                        <label for="fullName" id="fullNameLabel">Full name</label>
+                    </div>
+                    ​
+                    <div class="inputField">
+                        <input id="fullName"
+                               name="fullName"
+                               ng-model="$ctrl.fullName"
+                               ng-model-options="{ updateOn: 'default blur' }"
+                               value="all"
+                               type="text"
+                               class="formText"
+                                >
+                    </div>
+                </div>
+                ​
+                <div class="formField">
+                    <div>
+                        <label for="suburb" id="suburbLabel">Suburb</label>
+                    </div>
+                    ​
+                    <div class="inputField">
+                        <input id="suburb"
+                               name="suburb"
+                               ng-model="$ctrl.suburb"
+                               ng-model-options="{ updateOn: 'default blur' }"
+                               value="all"
+                               type="text"
+                               class="formText"
+                                >
+                    </div>
+                </div>
+                <div class="formField">
+                    <div>
+                        <label for="birthCountry" id="birthCountryLabel">Birth Country</label>
+                    </div>
+                    ​
+                    <div class="inputField">
+                        <input id="birthCountry"
+                               name="birthCountry"
+                               ng-model="$ctrl.birthCountry"
+                               ng-model-options="{ updateOn: 'default blur' }"
+                               value="all"
+                               type="text"
+                               class="formText"
+                                >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div>
+                <div class="formhead">Tell us what you {{$ctrl.profile}}:</div><br>
+                <div class="formbody">
+                    <div class="needsDiv">
+                        <!--<label ng-repeat="need in $ctrl.needs">
+                          <input type="checkbox" ng-model="$ctrl.needs.selected" value={{need.id}} />{{need.name}}
+                        </label>-->
+                        <label ng-repeat="needs in $ctrl.needs">
+                            <input  class="needs"
+                                    type="checkbox"
+                                    name="selectedNeeds[]"
+                                    value="{{needs.name}}"
+                                    ng-checked="$ctrl.selection.indexOf(needs) > -1"
+                                    ng-click="alert('hey')"
+                                    class="formText"
+                                    > {{needs.name}}
+                        </label>
+                    </div>
+                </div>
+            </div></div>
+        ​
+        <div>
+            <div>
+                <br>
+                <div class="formhead">Describe Who You Are</div><br>
+                <div class="formbody">
+                    <div class="shortDesc">
+                      <textarea
+                              ng-model="$ctrl.shortDesc"
+                              name="shortDesc">
+                      </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ​<center>
+            <div class="submit-button-group">
+                <button type="submit"
+                        ng-class="['primary-button', {'busy-please-wait': movingDetails.loadingAddressDetails}]">
+                    Continue
+                </button>
+            </div>
+        </center>
+    </div>
+</div>
